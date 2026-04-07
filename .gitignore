@@ -1,34 +1,142 @@
-# Gradle files
-.gradle/
-build/
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Ta'lim Platformam</title>
+    <style>
+        /* Umumiy sozlamalar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #f1f1f1;
+        }
 
-# Local configuration file (sdk path, etc)
-local.properties
+        /* Chap menyu (Sidebar) */
+        .sidebar {
+            width: 250px;
+            background-color: #ffffff;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+            padding: 20px 0;
+            flex-shrink: 0;
+        }
 
-# Log/OS Files
-*.log
+        .sidebar h2 {
+            padding: 0 20px;
+            color: #282a35;
+            font-size: 22px;
+        }
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: 0.3s;
+        }
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+        .sidebar a:hover {
+            background-color: #e7e9eb;
+        }
 
-# Keystore files
-*.jks
-*.keystore
+        .sidebar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+        /* Asosiy kontent qismi */
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+            overflow-y: auto;
+            background-color: white;
+        }
 
-# Android Profiling
-*.hprof
+        .header {
+            border-bottom: 2px solid #04AA6D;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* "Try it Yourself" tugmasi kabi stillar */
+        .btn-try {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-try:hover {
+            background-color: #059862;
+        }
+
+        /* Kod namunasi uchun blok */
+        .code-box {
+            background-color: #e7e9eb;
+            padding: 15px;
+            border-left: 4px solid #04AA6D;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>HTML Darslari</h2>
+        <a href="#" class="active">Kirish</a>
+        <a href="#">HTML Tahrirlagichlar</a>
+        <a href="#">HTML Asoslari</a>
+        <a href="#">HTML Elementlari</a>
+        <a href="#">HTML Atributlari</a>
+        <a href="#">HTML Sarlavhalar</a>
+        <a href="#">HTML Paragraflar</a>
+        <a href="#">HTML Stillar</a>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>HTML Kirish</h1>
+        </div>
+
+        <p>HTML (HyperText Markup Language) — bu veb-sahifalarni yaratish uchun standart belgilash tili.</p>
+        
+        <h3>Oddiy HTML hujjati:</h3>
+        
+        <div class="code-box">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;title&gt;Sahifa nomi&lt;/title&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            <br>
+            &lt;h1&gt;Bu sarlavha&lt;/h1&gt;<br>
+            &lt;p&gt;Bu paragraf.&lt;/p&gt;<br>
+            <br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+
+        <a href="#" class="btn-try">O'zingiz sinab ko'ring &raquo;</a>
+
+        <hr>
+
+        <h2>HTML nima?</h2>
+        <ul>
+            <li>HTML "Hyper Text Markup Language" degan ma'noni anglatadi.</li>
+            <li>HTML veb-sahifaning strukturasini tasvirlaydi.</li>
+            <li>HTML bir qator elementlardan iborat.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
